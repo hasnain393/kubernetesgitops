@@ -1,4 +1,4 @@
-FROM python:3.9  # You can choose a specific Python version for better compatibility
+FROM python  # You can choose a specific Python version for better compatibility
 
 WORKDIR /app
 
