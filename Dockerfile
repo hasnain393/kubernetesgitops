@@ -1,12 +1,10 @@
-# syntax=docker/dockerfile:1
-
-FROM python
+FROM python:3.9  # You can choose a specific Python version for better compatibility
 
 WORKDIR /app
 
 COPY requirements.txt requirements.txt
-RUN pip3 install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt  # Using pip instead of pip3
 
 COPY . .
 
-CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
+CMD [ "python", "-m" , "flask", "run", "--host=0.0.0.0"]
