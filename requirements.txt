@@ -1,1 +1,2 @@
-Flask==2.1.0
+Flask==2.1.2  # Replace with the version you are working with
+Werkzeug==2.1.1  # Choose a compatible version with your Flask version
